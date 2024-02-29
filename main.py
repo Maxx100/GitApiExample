@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = "Bearer " + os.getenv("TOKEN")
 NAME = os.getenv("NAME")
 URL = "https://api.github.com/users/" + NAME
 
